@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:halal_goodies/services/firebase_initializer.dart';
-import 'package:halal_goodies/screens/home_screen.dart';
+import 'screens/register_screen.dart';
 
 void main() async {
   await initializeFirebase();
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: HomeScreen(),
+      home: RegisterScreen(),
     );
   }
 }
